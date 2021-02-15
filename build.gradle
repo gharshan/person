@@ -14,6 +14,13 @@ configurations {
 	}
 }
 
+jar {
+    baseName = "api-person"
+    group    = "com.gharshan"
+    version  = "0.0.1-SNAPSHOT"
+    manifest { attributes "Main-Class": "com.gharshan.person.PersonApplication" }
+}
+
 repositories {
 	mavenCentral()
 }
